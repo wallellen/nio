@@ -1,9 +1,9 @@
 package com.wallellen.netty.nio2;
 
 /**
- * Created by <a href="mailto:wallellen@hotmail.com">WALLE</a> on 3/30/16.
+ * Created by <a href="mailto:wallellen@hotmail.com">WALLE</a> on 4/1/16.
  */
-public class TimeServer {
+public class TimeClient {
     public static void main(String[] args) {
         int port = 9090;
 
@@ -15,8 +15,6 @@ public class TimeServer {
             }
         }
 
-
-        AsyncTimeServerHandler timeServer = new AsyncTimeServerHandler(port);
-        new Thread(timeServer, "AIO-timeserverhandler-001").start();
+        new Thread(new AsyncTimeClientHandler("127.0.0.1", port), "AIO-AsynchTimeClientHandler-001").start();
     }
 }
