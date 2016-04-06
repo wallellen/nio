@@ -34,7 +34,7 @@ public class TimeClient {
                         pipeline.addLast(new TimeClientHandler());
                     }
                 })
-                .connect("127.0.0.1", 9088)
+                .connect("127.0.0.1", 8888)
                 .sync();
 
         future.channel().closeFuture().sync();

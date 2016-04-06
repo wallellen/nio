@@ -27,7 +27,7 @@ public class TimeClient {
                         ch.pipeline().addLast(new TimeClientHandler());
                     }
                 })
-                .connect("localhost", 9090).sync();
+                .connect("localhost", 8888).sync();
 
         future.channel().closeFuture().sync();
     }

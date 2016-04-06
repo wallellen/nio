@@ -37,4 +37,6 @@ public class TimeClientHandler extends ChannelHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         System.err.println("Now is " + msg + ", and counter is " + counter ++);
     }
+
+
 }

@@ -35,7 +35,7 @@ public class TimeServer {
                         pipeline.addLast(new TimeServerHandler());
                     }
                 })
-                .bind(9090).sync();
+                .bind(8888).sync();
 
         future.channel().closeFuture().sync();
     }

@@ -24,7 +24,7 @@ public class TimeServer {
                 .channel(NioServerSocketChannel.class)
                 .option(ChannelOption.SO_BACKLOG, 1024)
                 .childHandler(new ChildChannelHandler())
-                .bind(9090).sync();
+                .bind(8888).sync();
 
         sync.channel().closeFuture().sync();
     }
