@@ -30,8 +30,6 @@ public class EchoClientHandler extends ChannelHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        String res = (String) msg;
-
         System.err.println("This is " + counter++ + " times receive server [" + msg + "]");
     }
 
