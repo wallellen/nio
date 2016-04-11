@@ -1,4 +1,4 @@
-package com.wallellen.netty.section10;
+package com.wallellen.netty.section10.http;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
